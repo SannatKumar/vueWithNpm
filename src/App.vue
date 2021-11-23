@@ -1,7 +1,14 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    
+    <img alt="Vue logo" src="./assets/logo.png">    
+    <Home data="Raj is here" msg="message is here"/>
+    <img alt="Vue logo" src="./assets/logo.png">    
+    <Home data="Raj is here" msg="message is here"/>
+    <img alt="Vue logo" src="./assets/logo.png">    
+    <Home data="Raj is here" msg="message is here"/>
+    <img alt="Vue logo" src="./assets/logo.png">    
+    <Home data="Raj is here" msg="message is here"/>
+    <img alt="Vue logo" src="./assets/logo.png">    
     <Home data="Raj is here" msg="message is here"/>
   </div>
 </template>
@@ -9,7 +16,6 @@
 <script>
 
 import Home from './components/Home.vue'
-
 export default {
   name: 'App',
   components: {
