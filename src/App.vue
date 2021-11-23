@@ -2,7 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     
-    <Home />
+    <Home data="Raj is here" msg="message is here"/>
   </div>
 </template>
 
