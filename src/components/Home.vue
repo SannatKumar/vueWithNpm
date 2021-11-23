@@ -3,7 +3,8 @@
         <h1>Hello From Home Component</h1>
         <h1>{{data}}</h1>
         <h1>{{msg}}</h1>
-        <button @click="hello"> Call Hello Function</button>
+        <button v-on:mouseover="hello('data')"> Call Hello Function</button>
+
     </div>
 </template>
 <script>
@@ -16,9 +17,9 @@ export default{
         msg: String,
     },
     methods: {
-        hello()
+        hello(item)
         {
-            console.log("Console Hello Function Called")
+            console.log(item)
         }
     }        
     }
