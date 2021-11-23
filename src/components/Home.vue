@@ -18,7 +18,7 @@ export default{
     methods: {
         hello()
         {
-            alert("Hello Function Called")
+            console.log("Console Hello Function Called")
         }
     }        
     }
