@@ -1,13 +1,19 @@
 <template>
-    <h1>Hello From Home Component</h1>
-
-
+    <div>
+        <h1>Hello From Home Component</h1>
+        <h1>{{data}}</h1>
+        <h1>{{msg}}</h1>
+    </div>
 </template>
 <script>
 
 
 export default{
-    name:'Home'        
+    name:'Home',
+    props:{
+        data:String,
+        msg: String,
+    }        
     }
 
 </script>
