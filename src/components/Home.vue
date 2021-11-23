@@ -1,9 +1,9 @@
 <template>
     <div>
-        <h1>Hello From Home Component</h1>
-        <h1>{{data}}</h1>
-        <h1>{{msg}}</h1>
-        <button v-on:mouseover="hello('data')"> Call Hello Function</button>
+        <h1 v-if="show">Conditional Rendering in Vue js</h1>
+        <h1 v-else>Else Side</h1>
+        <button v-on:click = "display">Toogle</button>
+        
 
     </div>
 </template>
@@ -15,13 +15,18 @@ export default{
     props:{
         data:String,
         msg: String,
-    },
-    methods: {
-        hello(item)
-        {
-            console.log(item)
+    },data(){
+        return{
+            show:false
         }
-    }        
+    },
+    methods:{
+        display()
+        {
+            this.show=!this.show
+        }
     }
+}        
+    
 
 </script>
